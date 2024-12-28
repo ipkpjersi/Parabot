@@ -249,8 +249,9 @@ public class BotUI extends JFrame implements ActionListener, ComponentListener, 
     @Override
     public void windowDeiconified(WindowEvent arg0) {
         if (isVisible()) {
-            BotDialog.getInstance().setVisible(false);
-            BotDialog.getInstance().setVisible(true);
+            //Why would we want this when we can manually toggle the dialog with the menu option?
+            //BotDialog.getInstance().setVisible(false);
+            //BotDialog.getInstance().setVisible(true);
         }
     }
 
